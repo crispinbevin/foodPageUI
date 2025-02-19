@@ -3,6 +3,7 @@ import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import axios from 'axios'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 function App() {
 
@@ -140,6 +141,12 @@ function App() {
 						<div className="row gy-2 m-3">
 							<button className='btn' type='submit'>Create Account</button>
 						</div>
+						<div className="row gy-2 m-3">
+							<div className="col-12">
+								<Link to='/login'>Have an account? Login here.</Link>
+							</div>
+						</div>
+					
 					</form>
 				</div>
 			</div>

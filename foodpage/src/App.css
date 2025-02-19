@@ -64,3 +64,10 @@
   background-color: rgb(248, 112, 62);
   transform: translate(-1px, -2px);
 }
+
+.reg-footer{
+  font-size: .8rem;
+  display: flex;
+  justify-items: center;
+}
+
