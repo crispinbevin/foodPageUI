@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import axios from 'axios'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import Navbar from './Navbar'
 
 function App() {
 
@@ -60,6 +61,8 @@ function App() {
   }
 
 	return (
+		<Fragment>
+		<Navbar />
 		<div className="container-fluid register-section">
 			<div className="container">
 				<div className="row register-wrapper">
@@ -145,17 +148,12 @@ function App() {
 							<div className="col-12">
 								<Link to='/login'>Have an account? Login here.</Link>
 							</div>
-						</div>
-						<div className="row gy-2 m-3">
-							<div className="col-12">
-								<Link to='/products'>Product Page</Link>
-							</div>
-						</div>
-					
+						</div>					
 					</form>
 				</div>
 			</div>
 		</div>
+	</Fragment>
 	)
 }
 

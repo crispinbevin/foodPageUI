@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import axios from 'axios'
 import {toast, ToastContainer} from 'react-toastify'
+import Navbar from './Navbar'
 
 
 
@@ -39,6 +40,7 @@ function Login() {
     return (
         <div className="container-fluid register-section">
         <ToastContainer />
+        <Navbar />
             <div className="container login-section">
                 <div className="row register-wrapper">
                 <form action="" className="col-4 register-form" onSubmit={onSubmit}>

@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react'
 import axios from 'axios'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
+import Navbar from './Navbar'
 
 function Products() {
     const [products, setProducts] = useState([])
@@ -20,20 +22,21 @@ function Products() {
     console.log(products)
 
   return (
-    <div className="products-section">
-        <div className="container products-wrapper">
-            <h1>Products</h1>
-            <div className="product-grid">
-                {products.map((product)=>
-                    <div className="product-card" key={product.pID}>
-                        <div className="product-name">{product.name}</div>
-                        <div className="product-img"><img src={product.photo} alt="" /></div>
-                        <div className="product-id"><strong>pID:</strong> {product.pID}</div>
-                    </div>
-                )}
+      <div className="products-section">
+            <Navbar />
+            <div className="container products-wrapper">
+                <h1>Products</h1>
+                <div className="product-grid">
+                    {products.map((product)=>
+                        <div className="product-card" key={product.pID}>
+                            <div className="product-name">{product.name}</div>
+                            <div className="product-img"><img src={product.photo} alt="" /></div>
+                            <Link to='/productpage'><button className='std-btn'>VIEW ITEM</button></Link>
+                        </div>
+                    )}
+                </div>
             </div>
         </div>
-    </div>
   )
 }
 

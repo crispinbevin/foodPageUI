@@ -5,6 +5,7 @@ import './index.css'
 import App from './App.jsx'
 import Login from './Login.jsx'
 import Products from './Products.jsx'
+import ViewProduct from './ViewProduct.jsx'
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: '/products',
     element: <Products />
+  },
+  {
+    path: 'productpage',
+    element: <ViewProduct />
   }
 ])
 
