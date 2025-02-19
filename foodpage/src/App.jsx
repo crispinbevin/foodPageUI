@@ -146,6 +146,11 @@ function App() {
 								<Link to='/login'>Have an account? Login here.</Link>
 							</div>
 						</div>
+						<div className="row gy-2 m-3">
+							<div className="col-12">
+								<Link to='/products'>Product Page</Link>
+							</div>
+						</div>
 					
 					</form>
 				</div>
