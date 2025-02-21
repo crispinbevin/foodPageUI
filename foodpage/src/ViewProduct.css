@@ -1,0 +1,40 @@
+:root{
+    --bg: rgb(250, 239, 215);
+    --primary: rgb(230, 73, 78);
+    --plight: rgb(250, 219, 220);
+    --secondary: rgb(250, 171, 25);
+  
+  }
+
+.prodinfo-section{
+    min-height: 100vh;
+    background-color: var(--bg);
+}
+
+.product-view{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background-color: white;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.product-info{
+    display: flex;
+    gap: 7rem;
+}
+.product-view img{
+    max-width: 400px;
+}
+
+.description{
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.price{
+    font-size: 2rem
+}

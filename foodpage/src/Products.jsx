@@ -31,7 +31,7 @@ function Products() {
                         <div className="product-card" key={product.pID}>
                             <div className="product-name">{product.name}</div>
                             <div className="product-img"><img src={product.photo} alt="" /></div>
-                            <Link to='/productpage'><button className='std-btn'>VIEW ITEM</button></Link>
+                            <Link to= {`/productpage/${product.pID}` }><button className='std-btn'>VIEW ITEM</button></Link>
                         </div>
                     )}
                 </div>
