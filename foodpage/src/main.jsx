@@ -6,6 +6,8 @@ import App from './App.jsx'
 import Login from './Login.jsx'
 import Products from './Products.jsx'
 import ViewProduct from './ViewProduct.jsx'
+import Testing from './Testing.jsx'
+import { SkeletonTheme } from 'react-loading-skeleton'
 
 const router = createBrowserRouter([
   {
@@ -23,11 +25,17 @@ const router = createBrowserRouter([
   {
     path: '/productpage/:id',
     element: <ViewProduct />
+  },
+  {
+    path: '/testing',
+    element: <Testing />
   }
 ])
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router}/>
+    <SkeletonTheme baseColor='#faefd7' highlightColor='#fadbdc'>
+      <RouterProvider router={router}/>
+    </SkeletonTheme>
   </StrictMode>,
 )
