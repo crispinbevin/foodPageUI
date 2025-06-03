@@ -1,5 +1,12 @@
 This is a project that I undertook at FERNS IT Solutions to understand the working of a food delivery page.
 
+## How to Run after cloning this repository
+```bash
+cd foodpage
+npm install       # Install dependencies (only needed once)
+npm run dev       # Start the development server
+```
+
 I was provided with their API documentation and asked to build a barebones system that lets a user create account, login, and view food products.
 
 I did this using REACT and Tailwind CSS library for styling.
